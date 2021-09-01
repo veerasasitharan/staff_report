@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="a.Master.cs" Inherits="staff_report.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style >
+		nav{
+			display: flex;
+			align-items: center;
+			background: lightblue;
+			justify-content: space-between;
+
+		}
+		ul{
+			display: flex;
+			
+		}
+		li{
+			list-style: none;
+			margin:0.5rem;
+
+		}
+		a{
+			padding: 14px 16px;
+			text-decoration: none;
+			color: black;
+			
+		}
+        a:hover{
+           background-color:aliceblue;
+           color:black;
+        }
+        .menu{
+            overflow:hidden;
+        }
+	</style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <asp:ContentPlaceHolder ID="conbody" runat="server">
+
+             </asp:ContentPlaceHolder>
+       <nav>
+	
+	<div class="menu">
+		<ul>
+		<li><a href="staffadd.aspx">Staff Registration </a></li>
+		<li><a href="attend.aspx">Attendance</a></li>
+		<li><a href="webform7.aspx">Overalleport</a></li>
+            <li><a href="log.aspx">Login </a></li>
+	</ul>
+	</div>
+	
+</nav>
+       
+    </div>
+ 
+        <div class="bg-a" style="background-image:url('img/b7.jpg');  background-repeat:no-repeat; background-size:cover; height: 715px; margin-top: 0px;">
+            
+        </div>
+    </form>
+</body>
+</html>
